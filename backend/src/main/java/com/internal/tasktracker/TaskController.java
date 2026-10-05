@@ -40,7 +40,7 @@ public class TaskController {
 
         // Sane bounds clamping
         int validPage = Math.max(1, page);
-        int validPageSize = Math.min(Math.max(1, pageSize), 100);
+        int validPageSize = (pageSize <= 0) ? 10 : Math.min(pageSize, 100);
 
         System.out.println("[TaskController] q=\"" + query + "\" status=" + normalizedStatus
                 + " page=" + validPage + " pageSize=" + validPageSize);
