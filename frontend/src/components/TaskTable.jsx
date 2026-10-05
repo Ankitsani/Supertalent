@@ -15,11 +15,11 @@ export default function TaskTable({ tasks, loading, error }) {
     <table className="task-table">
       <thead>
         <tr>
-          <th>ID</th>
-          <th>Title</th>
-          <th>Status</th>
-          <th>Priority</th>
-          <th>Assignee</th>
+          <th scope="col">ID</th>
+          <th scope="col">Title</th>
+          <th scope="col">Status</th>
+          <th scope="col">Priority</th>
+          <th scope="col">Assignee</th>
         </tr>
       </thead>
       <tbody>
